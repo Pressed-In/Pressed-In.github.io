@@ -1,5 +1,7 @@
 var ctx = document.getElementById("myBarChart").getContext('2d');
 
+var allBackgroundColor = "rgb(114, 105, 204, 0.3)";
+
 ////////////// ALL THE DATA TO BE UPDATED //////////////////
 var FirstCountryNamesToDisplay = ['New Zealand', 'Australia'];
 var FirstNumbersToDisplay = [7.314, 7.284];
@@ -48,7 +50,7 @@ var myBarChart = new Chart(ctx, {
       { 
         data: FirstNumbersToDisplay,
         label: 'Australia and New Zealand',
-        backgroundColor: "rgba(120,146,194,0.4)",
+        backgroundColor: "rgb(114, 105, 204, 0.3)",
         borderWidth: 0,
       }
     ]
@@ -66,7 +68,7 @@ var myBarChart = new Chart(ctx, {
         },
         ticks: {
           /*fontSize: 10,*/
-        }
+        },
       }],
 
       xAxes: [{
@@ -102,7 +104,7 @@ var myBarChart = new Chart(ctx, {
 $("#Australia-and-New-Zealand").click(function() {
     myBarChart.data.labels = AustraliaNewZealandNAMES
     myBarChart.data.datasets[0].data = AustraliaNewZealandNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(120,146,194,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Australia and New Zealand"
 
     myBarChart.update();
@@ -111,7 +113,7 @@ $("#Australia-and-New-Zealand").click(function() {
 $("#North-America").click(function() {
     myBarChart.data.labels = NorthAmericaNAMES
     myBarChart.data.datasets[0].data = NorthAmericaNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(114,142,190,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "North America"
 
     myBarChart.update();
@@ -122,7 +124,7 @@ $("#North-America").click(function() {
 $("#Western-Europe").click(function() {
     myBarChart.data.labels = WesternEuropeNAMES
     myBarChart.data.datasets[0].data = WesternEuropeNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(109,138,186,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Western Europe"
 
     myBarChart.update();
@@ -132,7 +134,7 @@ $("#Western-Europe").click(function() {
 $("#Latin-America").click(function() {
     myBarChart.data.labels = LatinAmericaNAMES
     myBarChart.data.datasets[0].data = LatinAmericaNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(103,134,182,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Latin America"
 
     myBarChart.update();
@@ -142,7 +144,7 @@ $("#Latin-America").click(function() {
 $("#Eastern-Asia").click(function() {
     myBarChart.data.labels = EasternAsiaNAMES
     myBarChart.data.datasets[0].data = EasternAsiaNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(98,130,178,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Eastern Asia"
 
     myBarChart.update();
@@ -152,7 +154,7 @@ $("#Eastern-Asia").click(function() {
 $("#Southeastern-Asia").click(function() {
     myBarChart.data.labels = SoutheasternAsiaNAMES
     myBarChart.data.datasets[0].data = SoutheasternAsiaNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(98,130,178,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Southeastern Asia"
 
     myBarChart.update();
@@ -162,7 +164,7 @@ $("#Southeastern-Asia").click(function() {
 $("#Central-Eastern-Europe").click(function() {
     myBarChart.data.labels = CEENAMES
     myBarChart.data.datasets[0].data = CEENUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(87,122,170,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Central Eastern Europe"
 
     myBarChart.update();
@@ -172,7 +174,7 @@ $("#Central-Eastern-Europe").click(function() {
 $("#Middle-East").click(function() {
     myBarChart.data.labels = MiddleEastNAMES
     myBarChart.data.datasets[0].data = MiddleEastNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(81,118,166,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Middle East"
 
     myBarChart.update();
@@ -182,7 +184,7 @@ $("#Middle-East").click(function() {
 $("#Southern-Asia").click(function() {
     myBarChart.data.labels = SouthernAsiaNAMES
     myBarChart.data.datasets[0].data = SouthernAsiaNUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(76,114,162,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Southern Asia"
 
     myBarChart.update();
@@ -192,7 +194,7 @@ $("#Southern-Asia").click(function() {
 $("#Sub-Saharan-Africa").click(function() {
     myBarChart.data.labels = SSANAMES
     myBarChart.data.datasets[0].data = SSANUMBERS
-    myBarChart.data.datasets[0].backgroundColor = "rgba(71,110,158,0.4)"
+    myBarChart.data.datasets[0].backgroundColor = allBackgroundColor
     myBarChart.data.datasets[0].label = "Sub-Saharan Africa"
 
     myBarChart.update();
