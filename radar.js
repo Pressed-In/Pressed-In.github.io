@@ -1,6 +1,11 @@
+///////////////// INITIAL DATA ///////////////////
+
 var ThingToDisplay = [1.445060492, 1.529118538, 0.83032325, 0.607834756, 0.488852188, 0.342000216];
 var chart_labels = ['Avg GDP/Capita', 'Avg Family', 'Avg Life Expectancy', 'Avg Freedom', 'Avg Generosity', 'Avg Trust in Government'];
 var initial_label = ['Australia and New Zealand'];
+
+var allBackgroundColor = "rgb(114, 105, 204, 0.3)";
+var allBorderColor = "rgb(114, 105, 204, 0.1)";
 
 //////////////////// CHART STUFF /////////////////////
 
@@ -17,12 +22,11 @@ var myChart = new Chart(ctx, {
       { 
         data: ThingToDisplay,
         label: initial_label,
-        borderColor: "rgba(120,146,194,0.4)",
-        backgroundColor: "rgba(120,146,194,0.4)",
+        borderColor: allBorderColor,
+        backgroundColor: allBackgroundColor,
         borderWidth: 0,
         pointRadius: 0,
         pointHitRadius: 8,
-        //hoverBackgroundColor: "rgba(71,110,158,0.4)",
       }
     ]
   },
@@ -38,7 +42,7 @@ var myChart = new Chart(ctx, {
         beginAtZero: true,
         min: 0,
         max: 1.6,
-        backdropColor: '#e8ebf2',
+        backdropColor: '#e9eaea',
         backdropPaddingX: 0,
         backdropPaddingY: 0,
     },
@@ -48,7 +52,7 @@ var myChart = new Chart(ctx, {
       }
   },
 
-    tooltips: {
+  tooltips: {
       callbacks: {
        label: function(tooltipItem, data) {
                     var label = data.datasets[tooltipItem.datasetIndex].label || '';
@@ -68,9 +72,7 @@ var myChart = new Chart(ctx, {
 
 });
 
-/////////////////// BUTTON STUFF //////////////////////////
-
-
+/////////////////// BUTTON/UPDATE STUFF //////////////////////////
 
 $("#Australia-and-New-Zealand").click(function() {
     var data = myChart.data;
@@ -81,9 +83,9 @@ $("#Australia-and-New-Zealand").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(120,146,194,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(120,146,194,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -100,9 +102,9 @@ $("#North-America").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(114,142,190,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(114,142,190,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -119,9 +121,9 @@ $("#Western-Europe").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(109,138,186,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(109,138,186,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -138,9 +140,9 @@ $("#Latin-America").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(103,134,182,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(103,134,182,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -157,9 +159,9 @@ $("#Eastern-Asia").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(98,130,178,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(98,130,178,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -176,9 +178,9 @@ $("#Southeastern-Asia").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(98,130,178,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(98,130,178,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -195,9 +197,9 @@ $("#Central-Eastern-Europe").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(87,122,170,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(87,122,170,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -214,9 +216,9 @@ $("#Middle-East").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(81,118,166,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(81,118,166,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -233,9 +235,9 @@ $("#Southern-Asia").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(76,114,162,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(76,114,162,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
@@ -252,9 +254,9 @@ $("#Sub-Saharan-Africa").click(function() {
     data.labels = chart_labels;
     data.datasets[0].label = initial_label;
 
-    data.datasets[0].borderColor = "rgba(71,110,158,0.4)";
+    data.datasets[0].borderColor = allBorderColor;
     data.datasets[0].borderWidth = 0;
-    data.datasets[0].backgroundColor = "rgba(71,110,158,0.4)";
+    data.datasets[0].backgroundColor = allBackgroundColor;
     data.datasets[0].pointRadius = 0;
     data.datasets[0].pointHitRadius = 8;
 
