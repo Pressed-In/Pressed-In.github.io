@@ -1,5 +1,12 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth; 
-    /* overflow: hidden; */
+    width: calc(100vw - (100vw - 100%));
+    /* overflow-x: hidden; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
 }

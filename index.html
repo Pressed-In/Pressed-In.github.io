@@ -9,8 +9,6 @@
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -20,21 +18,21 @@
 <body>
   <script src="js/scripts.js"></script>
 
-    <div class="landing" style="height: 100vh; width:100vw; overflow: hidden;">
+    <div class="landing" style="height: 100vh; width:calc(100vw - (100vw - 100%)); overflow: hidden;">
       <div class="container-fluid" style="padding:0;">
-        <div class="row">
-          <div class="col-lg-12" align="center" >
+        <div class="row" style="margin:0;">
+          <div class="col-lg-12" align="center" style="padding:0;">
             <video autoplay muted loop id="myVideo">
               <source src="image_1.mp4" type="video/mp4">
             </video>
 
             
-            <div class="col-md-6 offset-md-3" style="display: flex; flex-direction: column; justify-content: space-evenly; border: 2px solid rgba(255, 255, 255, 0.75); background: rgba(0, 0, 0, 0.90); position: fixed; bottom: 50%; color: #f1f1f1;">
+            <div class="col-md-6 offset-md-3" style="display: flex; flex-direction: column; justify-content: space-evenly; border: 2px solid rgba(255, 255, 255, 0.75); background: rgba(0, 0, 0, 0.90); position: absolute; bottom: 58%; color: #f1f1f1;">
               <p class="display-3" style="font-size: calc(36px + (80 - 36) * ((100vw - 300px) / (1600 - 300))); padding-top: 5vh; display: table-cell; vertical-align: middle;">Preston Slane</p>
               <p class="font-weight-lighter" style="font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300))); padding-bottom: 6vh; display: table-cell; vertical-align: middle;">Data Scientist Portfolio</p>
             </div>
 
-            <div class="col-md-6 offset-md-3" style="display: flex; flex-direction: column; justify-content: space-evenly; border: 1px solid rgba(255, 255, 255, 0.75); background: rgba(0, 0, 0, 0.90); position: fixed; bottom: 18%; color: #f1f1f1;">
+            <div class="col-md-6 offset-md-3" style="display: flex; flex-direction: column; justify-content: space-evenly; border: 1px solid rgba(255, 255, 255, 0.75); background: rgba(0, 0, 0, 0.90); position: absolute; bottom: 35%; color: #f1f1f1;">
               <div class="row" style="padding-top: 20px; padding-bottom: 20px">
                 <h5 class="col-sm-3 font-weight-light" style="display: flex; align-items: center; justify-content: center;">About Me</h5>
                 <h5 class="col-sm-3 font-weight-light" style="display: flex; align-items: center; justify-content: center;">Projects</h5>
@@ -42,6 +40,16 @@
                 <h5 class="col-sm-3 font-weight-light" style="display: flex; align-items: center; justify-content: center;">Contact</h5>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about_me" style="width:calc(100vw - (100vw - 100%)); overflow: hidden;">
+      <div class="container-fluid" style="padding:0;">
+        <div class="row" style="margin:0;">
+          <div class="col-lg-12" align="center" style="padding:0;">
+            <p class="display-3">Hello this is about me!</p>
           </div>
         </div>
       </div>
