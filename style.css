@@ -8,5 +8,17 @@ html {
 body {
     margin: 0;
     padding: 0;
-
 }
+
+.fa-python:hover, .fa-r-project:hover, .fa-database:hover, .fa-js-square:hover, .fa-html5:hover, .fa-css3-alt:hover, .fa-file-excel:hover, .fa-plus:hover, .fa-chart-bar:hover, .fa-globe-americas:hover  {
+    /* -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in; */
+    /* transition: all 0.2s ease-in; */
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+/* a {
+    color: white;
+} */
