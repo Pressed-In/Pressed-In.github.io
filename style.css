@@ -121,9 +121,13 @@ body {
 }
 
 .about_me_wrapper {
-    padding: 50px 75px 25px 75px;
+    padding: 3% 5% 2.5% 5%;
 }
 
 .projects_wrapper {
-    padding: 25px 75px 50px 75px;
+    padding: 2.5% 5% 3% 5%;
+}
+
+.about_me_text {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
