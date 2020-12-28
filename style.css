@@ -10,14 +10,18 @@ body {
     padding: 0;
 }
 
-.fa-python:hover, .fa-r-project:hover, .fa-database:hover, .fa-js-square:hover, .fa-html5:hover, .fa-css3-alt:hover, .fa-file-excel:hover, .fa-plus:hover, .fa-chart-bar:hover, .fa-globe-americas:hover  {
-    /* -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in; */
-    /* transition: all 0.2s ease-in; */
+
+
+#icon_hover:hover svg{
     -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
+
+#project_links:hover {
+    color: blue;
+}
+
+
 
 /* .special:hover {
     opacity: 0.3;
@@ -30,16 +34,16 @@ body {
   } */
   
 .image {
-    opacity: 1;
+    opacity: 0.7;
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
+    transition: .25s ease;
     backface-visibility: hidden;
 }
 
 .middle {
-    transition: .5s ease;
+    transition: .25s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -47,14 +51,14 @@ body {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    width:80%;
+    width:100%;
+
 }
 
 .container:hover .image {
     opacity: 0.3;
-    
+    transform: scale(1.2)
 }
-
 
 
 .container:hover .middle {
@@ -62,9 +66,64 @@ body {
     
 }
 
+.container {
+    border-radius: 15px;
+}
+
 .text {
     color: black;
     font-weight: bold;
     font-size: calc(30px + (45 - 30) * ((100vw - 300px) / (1600 - 300)));
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+}
+
+
+.db_bodyfonts, .db_bodyfonts2 {
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.db_bodyfonts2 {
+    opacity: 0.75;
+}
+
+.project_1 {
+    border-radius: 5px; 
+}
+
+@media (max-width:992px) { 
+    
+    #small_screen_id {
+        padding-bottom: 20px;
+    }
+
+} 
+
+
+.about_me_card, .projects_card {
+
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.non_landing_body {
+    /* padding: 65px 0px 65px 0px; */
+
+    background-color: rgb(235, 235, 235, 0.4);
+    background-image:  linear-gradient(135deg, rgb(163, 163, 163, 0.4) 25%, transparent 25%), linear-gradient(225deg, rgb(163, 163, 163, 0.4) 25%, transparent 25%), linear-gradient(45deg, rgb(163, 163, 163, 0.4) 25%, transparent 25%), linear-gradient(315deg, rgb(163, 163, 163, 0.4) 25%, rgb(235, 235, 235, 0.4) 25%);
+    background-position:  20px 0, 20px 0, 0 0, 0 0;
+    background-size: 40px 40px;
+    background-repeat: repeat;
+}
+
+.about_me_wrapper {
+    padding: 50px 75px 25px 75px;
+}
+
+.projects_wrapper {
+    padding: 25px 75px 50px 75px;
 }
