@@ -3,6 +3,8 @@ html {
     scroll-behavior: smooth; 
     width: calc(100vw - (100vw - 100%));
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+
 }
 
 body {
