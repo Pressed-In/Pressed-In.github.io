@@ -25,9 +25,9 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-md navbar-custom">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #1f1f1f; ">
     <!-- Brand -->
-    <a class="navbar-brand" href="#home">Preston Slane</a>
+    <a class="navbar-brand" id="navbar_text" href="#home" style="color: #d6d6d6">Preston Slane</a>
   
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -37,23 +37,20 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#about_me">About Me</a>
+          <a class="nav-link" id="navbar_text" href="#about_me" style="color: #b8b8b8">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" id="navbar_text" href="#projects" style="color: #b8b8b8">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#resume">Resume</a>
+          <a class="nav-link" id="navbar_text" href="#resume" style="color: #b8b8b8">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacts">Contact</a>
+          <a class="nav-link" id="navbar_text" href="#contacts" style="color: #b8b8b8">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Excel">Excel</a>
+          <a class="nav-link" id="navbar_text" href="#Excel" style="color: #b8b8b8">Excel</a>
         </li>
       </ul>
     </div>
@@ -65,38 +62,38 @@
         <div class="landing_card" style="height: 100%; width: inherit; display: flex; flex-direction: column; justify-content: center; padding-left: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300))); padding-right: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));">
           
 
-          <div class="row" style="height: 60vh; width: inherit;  margin:0; ">
+          <div class="row" style="height: 70vh; width: inherit;  margin:0; ">
             <div class="col-lg-10 offset-lg-1" align="center" style="height: inherit; width: inherit; padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));">
-              <div class="title_wrapper" style="height: 100%; width: inherit; display: flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.5); border: 1px solid #D6D6D6; border-radius: 5px;  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgb(255, 255, 255, 0.2);">
-                <div class="row" style="margin: auto; height: 70%; display: flex; flex-direction:column; justify-content: center;">
-                  <div class="title_name" style="height: 40%; display: flex; flex-direction: column; justify-content: center;">
-                    <p style="margin: auto; color: #d6d6d6; font-size: calc(48px + (72 - 48) * ((100vw - 300px) / (1600 - 300)))">
+              <div class="row" style="height: 100%; width: inherit; display: flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.5); border: 1px solid #D6D6D6; border-radius: 5px;  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgb(255, 255, 255, 0.2);">
+                <div class="row" style="padding: 5%; margin: 0; height: 70%; width: inherit; display: flex; flex-direction:column; justify-content: space-around;">
+                  <div class="row" style="margin: 0; height: 40%; width: inherit; display: flex; flex-direction: column; justify-content: center;">
+                    <p id="landing_title_text" style="text-shadow: 2px 2px 5px rgba(214,214,214,0.7); margin: 0; color: #d6d6d6; font-size: calc(48px + (72 - 48) * ((100vw - 300px) / (1600 - 300)))">
                       Preston Slane
                     </p>
                   </div>
-                  <div class="title_desc" style="height: 30%; display: flex; flex-direction: column; justify-content: center;">
-                    <p style="margin: auto; color: #d6d6d6; font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)))">
+                  <div class="row" style="margin: 0; height: 30%; display: flex; flex-direction: column; justify-content: center;">
+                    <p id="landing_title_text" style="text-shadow: 2px 2px 5px rgba(214,214,214,0.7); margin: 0; color: #d6d6d6; font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)))">
                       Data Analyst Portfolio
                     </p>
                   </div>
                 </div>
                 <div class="row" style="margin: 0px 5% 0px 5%; border-top: 1px solid #d6d6d6; height: 30%; display: flex; flex-direction: column; justify-content: center;">
-                  <div class="title_links" style="height: 30%;  ">
-                    <div class="links_wrapper" style="display: flex; flex-direction: row; justify-content: space-evenly; ">
+                  <div class="row" style="margin: 0; height: 100%; width: inherit;  ">
+                    <!-- <div class="links_wrapper" style="display: flex; flex-direction: row; justify-content: space-evenly; "> -->
 
-                      <div class="col-md">
-                        <a href="#about_me" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">About Me</a>
+                      <div class="col-md" style="display: flex; flex-direction: column; justify-content: center;">
+                        <a href="#about_me" id="landing_link_text" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">About Me</a>
                       </div>
-                      <div class="col-md">
-                        <a href="#projects" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Projects</a>
+                      <div class="col-md" style="display: flex; flex-direction: column; justify-content: center;">
+                        <a href="#projects" id="landing_link_text" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Projects</a>
                       </div>
-                      <div class="col-md">
-                        <a href="#resume" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Resume</a>
+                      <div class="col-md" style="display: flex; flex-direction: column; justify-content: center;">
+                        <a href="#resume" id="landing_link_text" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Resume</a>
                       </div>
-                      <div class="col-md">
-                        <a href="#contact" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Contact</a>
+                      <div class="col-md" style="display: flex; flex-direction: column; justify-content: center;">
+                        <a href="#contact" id="landing_link_text" style="color: #d6d6d6; font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)))">Contact</a>
                       </div>
-                    </div>
+                    <!-- </div> -->
                   </div>
                 </div>
 
@@ -120,24 +117,24 @@
           <!-- <div class="container-fluid" style="padding:0;"> -->
             <div class="row" style="margin:0;">
               <div class="col-lg-12" align="center" style="padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))) calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300))) 0px calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));">
-                  <p class="wrapper-aboutme-head" align="center" style="margin: 0; font-weight: bold; font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1600 - 300)))">About Me</p>
+                  <p id="about_me_head" class="wrapper-aboutme-head" align="center" style="text-shadow: 2px 2px 5px rgba(31,31,31,0.7); margin: 0; font-weight: bold; font-size: calc(32px + (46 - 32) * ((100vw - 300px) / (1600 - 300)))">ABOUT ME</p>
               </div>
             </div>
             <div class="row" style="margin:0;">
               <div class="col-lg-8" align="center" style="padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));">
                 <div class="wrapper-aboutme-text" style="background-color: white; border-radius: 5px;  padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                  <p align="left" style="font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (1600 - 300)))">Hello!</p>
-                  <p  align="left" class="about_me_text" >My name is Preston, and I'm a data analyst 
+                  <p id="about_me_body_text" align="left" style="font-weight: bold; font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (1600 - 300)))">Hello!</p>
+                  <p id="about_me_body_text" align="left" class="about_me_text" >My name is Preston, and I'm a data analyst 
                     based out of Washington State. Thanks for checking out my portfolio!
                   </p>
-                  <p  align="left" class="about_me_text" >
-                    Working in the healthcare industry, I specialize in the analyzing and visualizing of data using a variety of different tools.
-                    These include Microsoft Excel, Python, R, SQL, STATA, amongst others.
+                  <p id="about_me_body_text" align="left" class="about_me_text" >
+                    Currently working in the healthcare industry, I specialize in analyzing, visualizing, and communicating data, using a variety of different tools and methods.
+                    These tools include Microsoft Excel, Python, R, SQL, and STATA, amongst others.
                   </p>
-                  <p  align="left" class="about_me_text" >
-                    I received my B.S. in Applied Mathematics from Western Washington University in 2018, and am currently enrolled in Georgia Tech's MS Analytics (OMSA) program.
+                  <p id="about_me_body_text" align="left" class="about_me_text" >
+                    I received my B.S. in Applied Mathematics from Western Washington University in 2018, and am currently enrolled in Georgia Tech's MS Analytics (OMSA) program, hoping to finish in Fall 2022.
                   </p>
-                  <p  align="left" class="about_me_text" >
+                  <p id="about_me_body_text" align="left" class="about_me_text" >
                     Aside from data-stuff, I enjoy hiking around northern Washington, re-watching The Office, following soccer, and playing Super Smash Bros. Melee.
                   </p>
                 </div>
@@ -154,54 +151,56 @@
                 <div class="languages_known" style="background-color: white; border-radius: 5px;  padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.2);">
                   <div class="row" style="margin: auto;">
                     <div class="col-lg-12">
-                      <p style="font-weight: bold; font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)))">Programming Languages</p>
+                      <p id="about_me_body_text" style="font-weight: bold; font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)))">Programming Languages</p>
                     </div>
                   </div>
                   <div class="row" style="margin: auto;">
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row"  id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row"  id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Python</p>
-                          <i class="fab fa-python"></i>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Python</p>
+                          <!-- <p style="font-size:calc(80 + (80 - 80) * ((100vw - 300px) / (1600 - 300)));"> -->
+                            <i class="fab fa-python"></i>
+                          <!-- </p> -->
                         </div>
                       </div>
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">R</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">R</p>
                           <i class="fab fa-r-project"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">SQL</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">SQL</p>
                           <i class="fas fa-database"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">JavaScript</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">JavaScript</p>
                           <i class="fab fa-js-square"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">HTML5</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">HTML5</p>
                           <i class="fab fa-html5"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">CSS3</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">CSS3</p>
                           <i class="fab fa-css3-alt"></i>
                         </div>
                       </div>                
@@ -216,46 +215,46 @@
                 <div class="softwares_known" style="background-color: white; border-radius: 5px;  padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.2);">
                   <div class="row" style="margin: auto;">
                     <div class="col-lg-12">
-                      <p style="font-weight: bold; font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)))">Softwards & BI</p>
+                      <p id="about_me_body_text" style="font-weight: bold; font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)))">Softwards & BI</p>
                     </div>
                   </div>
                   <div class="row" style="margin: auto;">
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Excel</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Excel</p>
                           <i class="far fa-file-excel"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Tableau</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Tableau</p>
                           <i class="fas fa-plus"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Power BI</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">Power BI</p>
                           <i class="fas fa-chart-bar"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">PowerPoint</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">PowerPoint</p>
                           <i class="far fa-file-powerpoint"></i>
                         </div>
                       </div>                
                     </div>
                     <div class="col-sm" style="margin-bottom:10px;">
-                      <div class="row" id="icon_hover" style="margin: 0; font-size: 5rem;">
+                      <div class="row" id="icon_hover" style="margin: 0; ">
                         <div class="col-lg-12" style="display: flex; flex-direction:column; align-items: center;">
-                          <p  style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">QGIS</p>
+                          <p id="about_me_body_text" style="margin: 10px 0px 5px 0px; font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)))">QGIS</p>
                           <i class="fas fa-globe-americas"></i>
                         </div>
                       </div>                
@@ -280,7 +279,7 @@
           
             <div class="row" style="margin:0;">
               <div class="col-lg-12" align="center" style="padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))) calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300))) 0px calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));">
-                <p class="wrapper-aboutme-head" align="center" style="margin: 0; font-weight: bold; font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1600 - 300)))">Projects</p>
+                <p id="projects_head" class="wrapper-aboutme-head" align="center" style="text-shadow: 2px 2px 5px rgba(31,31,31,0.7); margin: 0; font-weight: bold; font-size: calc(32px + (46 - 32) * ((100vw - 300px) / (1600 - 300)))">PROJECTS</p>
               </div>
             </div>
             <div class="row" style="margin:0;">
@@ -293,29 +292,29 @@
                         <div class="container " style="padding: 0; border: 4px solid black; overflow: hidden;">
                           <img src="project_pics/med_advantage_screenshot.png" class="image" style="width: 100%; height: auto;">
                           <div class="middle" style="padding: 0px 15px 0px 15px;">
-                            <div class="text" >OPEN PROJECT</div>
+                            <div class="text" id="projects_body_font">OPEN PROJECT</div>
                           </div>
                         </div>
     
                       </a>
                     </div>
                     <div class="col-lg-8">
-                        <div class="row" style="width: inherit;"><p style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">Medicare Advantage Report<br></p></div>
+                        <div class="row" style="width: inherit;"><p id="projects_body_font" style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">Medicare Advantage Report<br></p></div>
                         <div class="row">
-                          <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Overview: </p></div>
-                          <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Tableau Public dashboard made with several sources of csv data from cms.gov. Involves cleaning data & manipulating tables in Excel, joining tables and setting relationships in Tableau, and advanced knowledge of various Tableau charts.</p></div>
+                          <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Overview: </p></div>
+                          <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Tableau Public dashboard made with several sources of csv data from cms.gov. Involves cleaning data & manipulating tables in Excel, joining tables and setting relationships in Tableau, and advanced knowledge of various Tableau charts.</p></div>
                         </div>
                         <div class="row" >
-                          <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Tools Used: </p></div>
-                          <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Microsoft Excel, Tableau Public</p></div>
+                          <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Tools Used: </p></div>
+                          <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Microsoft Excel, Tableau Public</p></div>
                         </div>
                         <div class="row" >
                           <div class="col-sm-2" style="text-align: left;">
-                            <p class="db_bodyfonts" >Repository: </p>
+                            <p id="projects_body_font" class="db_bodyfonts" >Repository: </p>
                           </div>
                           <div class="col-sm-10" style="text-align: left;">
                             <p class="db_bodyfonts2" id="project_links" style="text-decoration: underline; ">
-                              <a href="https://github.com/Pressed-In/CMS_MedAdvantage_Dashboard" target="_blank" style="color: inherit;">
+                              <a href="https://github.com/Pressed-In/CMS_MedAdvantage_Dashboard" id="projects_body_font" target="_blank" style="color: inherit;">
                                 GitHub link
                               </a>
                             </p>
@@ -337,27 +336,27 @@
                         <div class="container " style="padding: 0; border: 4px solid black; overflow: hidden;">
                           <img class="image" id="covid_id" src="project_pics/covid_screenshot.png" style="width: 100%; height: auto;">
                           <div class="middle" >
-                            <div class="text" >OPEN PROJECT</div>
+                            <div class="text" id="projects_body_font">OPEN PROJECT</div>
                           </div>
                         </div>
                         
                       </a>
                     </div>
                     <div class="col-lg-8">
-                      <div class="row" style="width: inherit;"><p style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">COVID19 Dashboard<br></p></div>
+                      <div class="row" style="width: inherit;"><p id="projects_body_font" style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">COVID19 Dashboard<br></p></div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Overview: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Tableau Public dashboard made with data from the NY Times github. Involves reading and manipulating data for dataframe with Python, and advanced Tableau chart knowledge/styling.</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Overview: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Tableau Public dashboard made with data from the NY Times github. Involves reading and manipulating data for dataframe with Python, and advanced Tableau chart knowledge/styling.</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Tools Used: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Python, Tableau Public</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Tools Used: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Python, Tableau Public</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Repository:</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Repository:</p></div>
                         <div class="col-sm-10" style="text-align: left;">
                           <p class="db_bodyfonts2" id="project_links" style="text-decoration: underline; ">
-                            <a href="https://github.com/Pressed-In/COVID19_Tableau_Dashboard" target="_blank" style="color: inherit;">
+                            <a href="https://github.com/Pressed-In/COVID19_Tableau_Dashboard" target="_blank" id="projects_body_font" style="color: inherit;">
                               GitHub link
                             </a>
                           </p>
@@ -378,27 +377,27 @@
                         <div class="container " style="padding: 0; border: 4px solid black; overflow: hidden;">
                           <img class="image" id="covid_id" src="project_pics/electoral_college_pic.png" style="width: 100%; height: auto;">
                           <div class="middle" >
-                            <div class="text" >OPEN PROJECT</div>
+                            <div class="text" id="projects_body_font">OPEN PROJECT</div>
                           </div>
                         </div>
                         
                       </a>
                     </div>
                     <div class="col-lg-8">
-                      <div class="row" style="width: inherit;"><p style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">Electoral College Analysis<br></p></div>
+                      <div class="row" style="width: inherit;"><p id="projects_body_font" style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">Electoral College Analysis<br></p></div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Overview: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Visualization produced by Excel highlighting relative voter weight by state as of November 2020. Involved data manipulation and analysis in Excel (pivot tables) as well as advanced styling techniques.</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Overview: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Visualization produced by Excel highlighting relative voter weight by state as of November 2020. Involved data manipulation and analysis in Excel (pivot tables) as well as advanced styling techniques.</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Tools Used: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Excel</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Tools Used: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Excel</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Repository:</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Repository:</p></div>
                         <div class="col-sm-10" style="text-align: left;">
                           <p class="db_bodyfonts2" id="project_links" style="text-decoration: underline; ">
-                            <a href="https://github.com/Pressed-In/Electoral_College" target="_blank" style="color: inherit;">
+                            <a href="https://github.com/Pressed-In/Electoral_College" id="projects_body_font" target="_blank" style="color: inherit;">
                               GitHub link
                             </a>
                           </p>
@@ -426,20 +425,20 @@
                       </a>
                     </div>
                     <div class="col-lg-8">
-                      <div class="row" style="width: inherit;"><p style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">MOViN' 92.5 Listener Analysis<br></p></div>
+                      <div class="row" style="width: inherit;"><p id="projects_body_font" style="display: inline; vertical-align: top; font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)))">MOViN' 92.5 Listener Analysis<br></p></div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Overview: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Visualization and analysis produced by Excel, reflecting Seattle's MOViN' 92.5 listener data via SoundCloud (webscraping) as of October 2020. Involved advanced Python knowledge to webscrape SoundCloud's website, as well as Excel to aggregate data by day and month.</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Overview: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Visualization and analysis produced by Excel, reflecting Seattle's MOViN' 92.5 listener data via SoundCloud (webscraping) as of October 2020. Involved advanced Python knowledge to webscrape SoundCloud's website, as well as Excel to aggregate data by day and month.</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Tools Used: </p></div>
-                        <div class="col-sm-10" style="text-align: left;"><p class="db_bodyfonts2">Python, Excel, webscraping</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Tools Used: </p></div>
+                        <div class="col-sm-10" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts2">Python, Excel, webscraping</p></div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2" style="text-align: left;"><p class="db_bodyfonts">Repository:</p></div>
+                        <div class="col-sm-2" style="text-align: left;"><p id="projects_body_font" class="db_bodyfonts">Repository:</p></div>
                         <div class="col-sm-10" style="text-align: left;">
                           <p class="db_bodyfonts2" id="project_links" style="text-decoration: underline; ">
-                            <a href="https://github.com/Pressed-In/925_listener_viz" target="_blank" style="color: inherit;">
+                            <a href="https://github.com/Pressed-In/925_listener_viz" id="projects_body_font" target="_blank" style="color: inherit;">
                               GitHub link
                             </a>
                           </p>

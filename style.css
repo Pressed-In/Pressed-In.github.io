@@ -19,6 +19,13 @@ body {
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
+#icon_hover {
+    /* font-size: 5rem; */
+
+    font-size: calc(50px + (80 - 50) * ((100vw - 300px) / (1600 - 300)))
+
+}
+
 #project_links:hover {
     color: blue;
 }
@@ -155,11 +162,7 @@ body {
     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.wrapper-aboutme-head {
-    /* padding-bottom: 1%; */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.2);
-    background-color: white; */
-}
+
 
 .landing {
     background-color: #000000;
@@ -176,15 +179,27 @@ body {
 }
 
 
-/* Modify the backgorund color */ 
-.navbar-custom { 
-    background-color: #1f1f1f; 
-} 
 
-.nav-link {
-    color: #d6d6d6;
+#about_me_body_text {
+    font-family: 'Arial'
 }
 
-.navbar-brand {
-    color: #d6d6d6;
+#projects_head, #about_me_head {
+    font-family: 'Verdana'
+}
+
+#projects_body_font {
+    font-family: 'Arial'
+}
+
+#landing_title_text {
+    font-family: 'Verdana'
+}
+
+#landing_link_text {
+    font-family: 'Arial'
+}
+
+#navbar_text {
+    font-family: 'Arial'
 }
