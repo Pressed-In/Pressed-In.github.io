@@ -115,7 +115,7 @@ body {
 } 
 
 
-.about_me_card, .projects_card, .landing_card {
+.about_me_card, .projects_card, .landing_card, .contact_me_card {
 
     max-width: 1600px;
     margin-right: auto;
