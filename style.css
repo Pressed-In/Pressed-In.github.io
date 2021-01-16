@@ -208,6 +208,10 @@ body {
 
 #projects_body_font {
     font-family: 'Arial';
+    /* padding: 0 35px 0 35px; */
+}
+
+#open_project_font {
     padding: 0 35px 0 35px;
 }
 
