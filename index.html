@@ -19,6 +19,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
 </head>
@@ -56,8 +58,9 @@
     </div>
   </nav>
 
+    
     <a id="home"></a>
-    <div class="landing" style="height: 100vh; width:calc(100vw - (100vw - 100%)); overflow: hidden;">
+    <div class="landing" id="particles-js" style="height: 100vh; width:calc(100vw - (100vw - 100%)); overflow: hidden;">
       <div class="landing_body" style="height: 100%; width: inherit; padding: 0% 5% 0px 5%;">
         <div class="landing_card" style="height: 100%; width: inherit; display: flex; flex-direction: column; justify-content: center; padding-left: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300))); padding-right: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));">
           
@@ -73,7 +76,7 @@
                   </div>
                   <div class="row" style="margin: 0; height: 30%; display: flex; flex-direction: column; justify-content: center;">
                     <p id="landing_title_text" style="margin: 0; color: #d6d6d6; font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)))">
-                      Analysis & Visualization
+                      Personal Portfolio Website
                     </p>
                   </div>
                 </div>
@@ -104,12 +107,11 @@
 
 
 
-        </div>
+        </div><a id="about_me"></a>
       </div>
-      <a id="about_me"></a>
+      
     </div>
-
-
+    
     <div class="non_landing_body">
       <div class="about_me_wrapper">
         <div class="about_me_card" style="width:calc(100vw - (100vw - 100%)); overflow: hidden; background-color: transparent; padding-left: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300))); padding-right: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));">
@@ -124,16 +126,16 @@
               <div class="col-lg-8" align="center" >
                 <div class="wrapper-aboutme-text" style="padding: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300))); ">
                   <p id="about_me_body_text" align="left" style="font-weight: bold; font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (1600 - 300)))">Hello!</p>
-                  <p id="about_me_body_text" align="left" class="about_me_text" >My name is Preston, and I’m a data analyst living in Washington State. Thanks for checking out my website!
+                  <p id="about_me_body_text" align="left" class="about_me_text" >My name is Preston, and I work as a data analyst Washington State. Thanks for checking out my website!
                   </p>
                   <p id="about_me_body_text" align="left" class="about_me_text" >
-                    I currently work remotely in the healthcare industry and am excited to graduate from Georgia Tech’s MS Analytics (OMSA) program in December of 2022. Through my work & studies I’ve gained a plethora of experience in things data-related, from manipulation to modeling to dashboarding. I would also consider myself an expert Google-user! Perhaps the most valuable skill of all...
+                    I currently work in the healthcare industry and am happy to have recently graduated from Georgia Tech’s MS Analytics (OMSA) program. Through my work and studies I’ve gained a plethora of experience in the full stack of data analysis, from processing and querying to visualization. Feel free to check out some of my projects below.
                   </p>
                   <!-- <p id="about_me_body_text" align="left" class="about_me_text" >
                     I received my B.S. in Applied Mathematics from Western Washington University in 2018, and am currently enrolled in Georgia Tech's MS Analytics (OMSA) program, hoping to finish in Fall 2022.
                   </p> -->
                   <p id="about_me_body_text" align="left" class="about_me_text" >
-                    Aside from all that stuff, I enjoy watching & playing soccer (Go Barca! Go Sounders!), hiking & camping around Washington, re-watching The Office, and playing some good 'ol videogames. 
+                    In my free time, I enjoy watching and playing soccer (Go Barca! Go Sounders!), hiking and camping around Washington, re-watching The Office, and playing videogames with my friends. 
                   </p>
                 </div>
               </div>
@@ -680,8 +682,13 @@
     </div>
 
 
-    <!-- <script>
-
-    </script> -->
+    <!-- <script> Import Particles.js and app.js files -->
+  <script src=
+      "particles.js-master/particles.js">
+  </script>
+  <script src=
+      "particles.js-master/demo/js/app.js">
+  </script>
+    </script> 
 </body>
 </html>
